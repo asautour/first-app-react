@@ -11,7 +11,7 @@ import "./styles.css";
 const store = createStore(allReducers);
 
 ReactDOM.render(
-  <Provider>
+  <Provider store={store}>
     <App />
   </Provider>,
   document.getElementById("root")
